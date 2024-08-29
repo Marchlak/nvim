@@ -11,7 +11,7 @@ local servers = {
   "lemminx",               -- XML
   "jsonls",                -- JSON
   "bashls",                -- Bash
-  "rust_analyzer",         -- Rust
+  "pylsp"                 -- Python
 }
 
 return {
@@ -51,6 +51,20 @@ return {
           lspconfig[server].setup({ capabilities = capabilities })
         end,
         ["jdtls"] = function() end,
+        ["pylsp"] = function()
+          lspconfig.pylsp.setup({
+            capabilities = capabilities,
+            settings = {
+              pylsp = {
+                plugins = {
+                  pycodestyle = {
+                    maxLineLength = 160,  -- Zwiększenie limitu długości linii do 160 znaków
+                  },
+                },
+              },
+            },
+          })
+        end,
       })
 
       vim.api.nvim_create_autocmd("LspAttach", {
