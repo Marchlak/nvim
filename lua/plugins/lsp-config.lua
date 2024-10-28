@@ -1,6 +1,5 @@
 local servers = {
   "lua_ls",                -- Lua
-  "tsserver",              -- JavaScript, TypeScript, React
   "jdtls",                 -- Java
   "clangd",                -- C++
   "html",                  -- HTML
