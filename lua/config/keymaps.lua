@@ -14,6 +14,10 @@ end
 
 vim.api.nvim_set_keymap('n', '<leader>nf', ':lua CreateFileInCurrentDir()<CR>', { noremap = true, silent = true })
 
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { noremap = true, silent = true })
+
+
 
 
 

@@ -39,6 +39,8 @@ return {
     vim.keymap.set("n", "<C-p>", builtin.git_files, {})
     vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
 
+    vim.keymap.set("n", "<leader>ld", builtin.diagnostics, { noremap = true, silent = true })
+
     -- find string
 
     -- find under cursor
