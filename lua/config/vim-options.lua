@@ -13,5 +13,4 @@ vim.opt.mouse = "a"
 
 vim.opt.wrap = false
 vim.opt.cursorline = true
-vim.opt.colorcolumn = "80"
 vim.opt.termguicolors = true
