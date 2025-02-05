@@ -21,15 +21,32 @@ R - replace
 ##e delete ##
 dd - delete line
 D - delete line from current line
+x - delete char next to cursor
+X - delete char behind to cursor
+## other ##
+:vs screen split verticaly
 ### Netrw -> leader-pv ###
 P - File Preview.
 R - Rename File/ Move File.
 D - Delete file.
 % - New file.
 d - New directory.
+### Moiving Cursor
+E - Move the end of word forward white spaces
+e - Move the word is keyword
+w - Move to the beginning of next word is isKeyWord 
+W - Move to the beginning of next word 
+B - move backward to the beggining word isKeyWord
+b - move backward to the beggining word iskeyword
 ### Plugins ###
   "0x00-ketsu/autosave.nvim",
 # Description
 - Autosaving files.
 # Shortcuts
 - None
+"windwp/nvim-autopairs"
+Add automatic pairs for 
+"carppuccin/nvim"
+Colors and styles
+"CMP"
+
